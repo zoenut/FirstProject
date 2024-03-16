@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Art Collection</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-EtEwNdYhmD16s4vsn7JeZrqAK7S8u44S39rNL5LPidCvbSoVrOHLY73kWJwwgt2B" crossorigin="anonymous">
+    <link rel="icon" href="images/178390.png" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .hamburger-menu {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-right: 20px; /* Adjust spacing as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container_nav__container">
+            <a href="index.html">
+                <h4>Prototype Art Collection</h4>
+            </a>
+        </div>
+
+        <div class="hamburger-menu">
+            <i class="fas fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <ul class="nav__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1 style="font-size: 70px;">HELLO!</h1>
+                <p>
+                    I am Sunib Bhakta Pradhananga. I am a student stuying BIT in National College of Management and Technical science (NCMT) college in Samakhusi, Kathmandu....
+                </p>
+                <a href="About.html" class="btn btn-primary">Learn more</a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="./images/Nayuta.jpg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>About</h1>
+                <p>
+                    An art gallery website serves as a digital platform to showcase and promote various forms of art, including paintings, sculptures, photographs, installations, and more. The primary goal is to create an online presence for the gallery, allowing art enthusiasts, collectors, and the general public to explore and engage with the displayed artworks.
+                </p>
+                <a href="About.html" class="btn">Learn More</a>
+            </div>
+
+            <section class="IMGS">
+                <h2>ART COLLECTIONS</h2>
+                <div class="ART">
+                    <div>
+                        <img src="./images/profile.jpg" class="ghost">
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="./images/Chibby ghost Kirby.jpg" class="ghost">
+                        <p></p>
+                    </div>
+                    <div>
+                        <img src="./images/Depress.jpg" class="ghost">
+                        <p></p>
+                    </div>
+                </div>
+                <a href="Gallery.html" class="btn">Click here to view Art collection</a>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Prototype Art Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.querySelector('.nav__menu');
+            navMenu.classList.toggle('open');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+        
+    <link rel="icon" href="images/178390.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 10px;
+            background-color: rgb(0, 114, 115);
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgb(108, 185, 186);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container_nav__container">
+            <a href="index.html">
+                <h4 style="align-items:center;">Prototype Art Collection</h4>
+            </a>
+        </div>
+
+        <div class="hamburger-menu">
+            <i class="fas fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <ul class="nav__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="about_body">
+        <h1><b>Welcome to Prototype Art Collection About page.</b></h1><br>
+        
+
+        <div class="grid-container">
+            <div class="item1">
+                <h2><b>About Prototype Art Collection:</b></h2>
+                <p>This website is made just for art collection by me. I am interested in art in general and I want to share my art projects I have done till now.</p>
+            </div>
+            <div class="item2">
+                <h2><b>About me:</b></h2>
+                <div class="about-me._container">
+                    <div class="flex-container">
+                        <div class="image-container">
+                            <img src="./images/profilel.gif" alt="Profile Image" class="img-fluid">
+                        </div>
+                        <div class="text-container">
+                            <p>Hello, my name is Sunib Bhakta Pradhananga. I am a BIT student currently learning in National College of Management and Technical Science (NCMT) located in Samakhusi, Kathmandu. I'm curious—constantly learning and expanding my skill set. I strive to ensure that every element has a reason why it resides in a certain space and looks the way it does. The result is an effective design solution built with integrity and purpose. It communicates quickly and easily across multiple mediums.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item3">
+                <h2><b>Mission:</b></h2>
+                <p>My goal is to show my art collection to the people. I want to get better everyday beacause i appreciate art</p>
+            </div>
+            <div class="item4">
+                <h2><b>What is Virtual Art Gallery?</b></h2>
+                <p>A virtual art gallery is an online platform that replicates the experience of visiting a physical art gallery in a digital space. It provides art enthusiasts with the opportunity to explore and appreciate artworks from the comfort of their own devices. Virtual art galleries often feature curated exhibitions, allowing users to view and interact with various artworks, including paintings, sculptures, and multimedia installations. These online galleries contribute to the accessibility of art, making it available to a global audience, and they may include features like 3D exhibition spaces, virtual tours, and interactive elements to enhance the user experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Prototype Art Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.querySelector('.nav__menu');
+            navMenu.classList.toggle('open');
+        }
+    </script>
+
+</body>
+
+</html>
