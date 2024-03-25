@@ -11,24 +11,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-        
     <link rel="icon" href="images/178390.png" type="image/icon type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto;
-            grid-gap: 10px;
-            background-color: rgb(0, 114, 115);
-            padding: 10px;
+        /* Additional CSS styles */
+        .about-me-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
         }
 
-        .grid-container>div {
-            background-color: rgb(108, 185, 186);
-            text-align: center;
-            padding: 20px 0;
-            font-size: 30px;
+        .about-me-image {
+            flex: 0 0 auto; /* This keeps the width of the image container fixed */
+            margin-right: 20px; /* Adjust margin as needed */
+        }
+
+        .about-me-image img {
+            width: 120px; /* Adjust the width of the image as needed */
+            height: auto;
+            border-radius: 50%; /* Make the image round */
+        }
+
+        .about-me-text {
+            flex: 1; /* This allows the text container to grow and occupy remaining space */
+        }
+
+        /* Optional: Adjust the font size and line height for better readability */
+        .about-me-text p {
+            font-size: 16px;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -38,13 +50,14 @@
     <nav>
         <div class="container_nav__container">
             <a href="index.html">
-                <h4 style="align-items:center;">Prototype Art Collection</h4>
+                <h4>Prototype Art Collection</h4>
             </a>
         </div>
 
         <div class="hamburger-menu">
             <i class="fas fa-bars" onclick="toggleMenu()"></i>
         </div>
+
         <ul class="nav__menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
@@ -55,7 +68,6 @@
 
     <div class="about_body">
         <h1><b>Welcome to Prototype Art Collection About page.</b></h1><br>
-        
 
         <div class="grid-container">
             <div class="item1">
@@ -64,16 +76,13 @@
             </div>
             <div class="item2">
                 <h2><b>About me:</b></h2>
-                <div class="about-me._container">
-                    <div class="flex-container">
-                        <div class="image-container">
-                            <img src="./images/profilel.gif" alt="Profile Image" class="img-fluid">
-                        </div>
-                        <div class="text-container">
-                            <p>Hello, my name is Sunib Bhakta Pradhananga. I am a BIT student currently learning in National College of Management and Technical Science (NCMT) located in Samakhusi, Kathmandu. I'm curious—constantly learning and expanding my skill set. I strive to ensure that every element has a reason why it resides in a certain space and looks the way it does. The result is an effective design solution built with integrity and purpose. It communicates quickly and easily across multiple mediums.</p>
-                        </div>
+                <div class="about-me-container">
+                    <div class="about-me-image">
+                        <img src="./images/profilel.gif" alt="Profile Image">
                     </div>
-                    
+                    <div class="about-me-text">
+                        <p>Hello, my name is Sunib Bhakta Pradhananga. I am a BIT student currently learning in National College of Management and Technical Science (NCMT) located in Samakhusi, Kathmandu. I'm curious—constantly learning and expanding my skill set. I strive to ensure that every element has a reason why it resides in a certain space and looks the way it does. The result is an effective design solution built with integrity and purpose. It communicates quickly and easily across multiple mediums.</p>
+                    </div>
                 </div>
             </div>
             <div class="item3">
@@ -88,6 +97,12 @@
     </div>
 
     <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/sunib.pradhananga" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/_Sunib_" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sunib_pradhananga/" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/zoenut" class="social-link"><i class="fab fa-github"></i></a>
+        </div>
         <p>&copy; 2023 Prototype Art Website. All rights reserved.</p>
     </footer>
 

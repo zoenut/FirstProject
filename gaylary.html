@@ -55,6 +55,15 @@
         .card-detail p {
             margin: 0;
         }
+
+        .hamburger-menu {
+            z-index: 1000; /* Ensure the hamburger menu appears above other elements */
+        }
+        .nav__menu.open {
+    display: flex;
+    z-index: 1001; /* Ensure the open navigation menu appears above other elements */
+}
+
     </style>
 </head>
 
@@ -125,16 +134,148 @@
         </div>
     </div>
 
-<footer>
-        <p>&copy; 2023 Prototype Art Website. All rights reserved.</p>
-</footer>
+    <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>Here are some of my art I have done.</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Card</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="./images/Chibby ghost Kirby.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="./images/Chibby ghost Kirby.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/images/CatInABag.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/CatInABag.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/images/Denji penguin.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/Denji penguin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="assets/images/Makima serious tattoo.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/Makima serious tattoo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/images/Nayuta.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/Nayuta.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/images/Elevator.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/Elevator.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="assets/images/Depress.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/Depress.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="assets/images/eye_contact.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/eye_contact.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="assets/images/nahidwin.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/nahidwin.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/images/peer_art.jpg" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/images/peer_art.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Portfolio Section -->
 
-<script>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/sunib.pradhananga" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/_Sunib_" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sunib_pradhananga/" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/zoenut" class="social-link"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2023 Prototype Art Website. All rights reserved.</p>
+    </footer>
+
+    <script>
         function toggleMenu() {
             var navMenu = document.querySelector('.nav__menu');
             navMenu.classList.toggle('open');
         }
-</script>
+    </script>
 
 </body>
 
